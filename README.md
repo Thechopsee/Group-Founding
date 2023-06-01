@@ -6,4 +6,4 @@ npm run dev -- run frontend
 nmp run deploy --deploy smart contract on blockchain
 ```
 ## Looks like this:
-![UI showcase.]((https://github.com/Thechopsee/Group-Founding/blob/main/img/UI.png?raw=true))
+![UI showcase.](https://raw.githubusercontent.com/Thechopsee/Group-Founding/main/img/UI.png)
