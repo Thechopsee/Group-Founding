@@ -108,8 +108,6 @@ export default defineComponent({
         return;
       }
       const weiValue = ethers.utils.parseUnits(investmentAmount.value+"", "ether");
-      //const funding =ethers.utils.parseEther(String(investmentAmount.value+""))
-      //console.log(weiValue.toNumber())
       const registryInstance = new Contract(registryAdress.address, registryABI.abi,user) as ProjectRegistry;
       try {
         const tx =await registryInstance.invest(id,{value:weiValue });

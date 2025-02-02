@@ -54,7 +54,7 @@ import { boolean } from 'hardhat/internal/core/params/argumentTypes';
             let provider: ethers.providers.Web3Provider | null = null;
             provider = new ethers.providers.Web3Provider((window as any).ethereum);
             user = provider.getSigner();
-            const unixTime = Date.parse(this.deadline) / 1000; // převod na Unix timestamp
+            const unixTime = Date.parse(this.deadline) / 1000;
             const unixTimestart =BigInt(Date.now()) / 1000n;
             if(unixTime<unixTimestart)
             {
@@ -93,11 +93,6 @@ import { boolean } from 'hardhat/internal/core/params/argumentTypes';
             this.targetAmount=0.0;
             this.deadline="";
             this.chngModal();
-           
-
-
-            
-
     },
 
   }});
